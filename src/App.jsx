@@ -423,7 +423,7 @@ export default function Portfolio() {
             <div className="md:col-span-4 relative">
               <div className="aspect-[4/5] bg-ink relative overflow-hidden">
 <img
-  src="./assets/hermes.jpeg"
+  src={new URL('./assets/hermes.jpeg', import.meta.url).href}
   alt="Yasmina"
   style={{ width: "100%", height: "100%", objectFit: "cover" }}
 />
@@ -653,12 +653,12 @@ export default function Portfolio() {
   <div className="project-thumb-inner absolute inset-0">
     <img
 src={[
-  "./assets/family-row-logo.jpeg",
-  "./assets/jpgaultier-billboard.jpeg",
-  "./assets/rim-label.jpeg",
-  "./assets/mind-collage.jpeg",
-  "./assets/duality-face.jpeg",
-  "./assets/lebanon-collage.jpeg",
+  new URL('./assets/family-row-logo.jpeg', import.meta.url).href,
+  new URL('./assets/jpgaultier-billboard.jpeg', import.meta.url).href,
+  new URL('./assets/rim-label.jpeg', import.meta.url).href,
+  new URL('./assets/mind-collage.jpeg', import.meta.url).href,
+  new URL('./assets/duality-face.jpeg', import.meta.url).href,
+  new URL('./assets/lebanon-collage.jpeg', import.meta.url).href,
 ][i]}
       alt={p.title}
       style={{ width: "100%", height: "100%", objectFit: "cover" }}
